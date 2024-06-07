@@ -10,9 +10,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 500px;
   border: 5px solid #333;
   border-radius: 5px;
+  max-width: 400px;
 }
 
 .screen-wrapper,
@@ -23,7 +23,7 @@
   align-items: center;
   background-color: #000000;
   width: 100%;
-  min-height: 100px;
+  min-height: 10px;
 }
 
 .inputs-container {
@@ -32,13 +32,32 @@
 }
 
 .screen-container {
-  margin-top: 5px;
+  margin: 5px 5px 0 5px;
   min-height: 125px;
   width: 95%;
   border: 1px solid #fff;
   border-radius: 5px;
   background-color: #d6f57086;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  max-width: 400px;
+  overflow: hidden;
+  flex-grow: 1;
 }
+
+.screen-input,
+.screen-result {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+    font-size: 48px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 .row-0 {
   display: flex;
@@ -51,16 +70,17 @@
 .row-3,
 .row-4 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 2px 0px;
 }
 
 .calc-button {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
-  min-width: 60px;
+  min-width: 90px;
   padding: 10px;
   margin: 5px;
   font-size: 32px;
@@ -78,6 +98,10 @@
   display: flex;
   flex-grow: 1;
   padding: 0px;
+  /* max-width: 200px; */
+  min-width: 190px;
+  /* box-sizing: border-box; */
+
 }
 
 .calc-button:hover {
@@ -109,7 +133,7 @@
 .clear,
 .delete {
   background-color: #676767;
-  border: 2px solid #676767;
+  border: 2px solid #333;
 }
 
 .clear:hover {
