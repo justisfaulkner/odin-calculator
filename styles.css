@@ -40,6 +40,12 @@
   background-color: #d6f57086;
 }
 
+.row-0 {
+  display: flex;
+  justify-content: stretch;
+  padding-top: 5px;
+}
+
 .row-1,
 .row-2,
 .row-3,
@@ -48,10 +54,6 @@
   justify-content: center;
   align-items: center;
   padding: 2px 0px;
-}
-
-.row-1 {
-    padding-top: 5px;
 }
 
 .calc-button {
@@ -69,6 +71,13 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.2s;
+}
+
+.clear,
+.delete {
+  display: flex;
+  flex-grow: 1;
+  padding: 0px;
 }
 
 .calc-button:hover {
@@ -95,4 +104,18 @@
 
 .equals:hover {
   background-color: #ae3d3d;
+}
+
+.clear,
+.delete {
+  background-color: #676767;
+  border: 2px solid #676767;
+}
+
+.clear:hover {
+  background-color: #ca4949;
+}
+
+.delete:hover {
+    background-color: #ca9049;
 }
