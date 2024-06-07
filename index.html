@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./scripts.js" defer></script>
     <title>Odin Calc</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="calc-container">
+      <div class="screen-wrapper">
+        <div class="screen-container">
+        </div>
+      </div>
+      <div class="inputs-wrapper">
+        <div class="inputs-container">
+            <div class="row-1">
+                <button class="calc-button" id="7">7</button>
+                <button class="calc-button" id="8">8</button>
+                <button class="calc-button" id="9">9</button>
+                <button class="calc-button operator" id="divide">÷</button>
+            </div>
+            <div class="row-2">
+                <button class="calc-button" id="4">4</button>
+                <button class="calc-button" id="5">5</button>
+                <button class="calc-button" id="6">6</button>
+                <button class="calc-button operator" id="multiply">x</button>
+            </div>
+            <div class="row-3">
+                <button  class="calc-button"id="1">1</button>
+                <button  class="calc-button"id="2">2</button>
+                <button  class="calc-button"id="3">3</button>
+                <button  class="calc-button operator"id="subtract">-</button>
+            </div>
+            <div class="row-4">
+                <button class="calc-button" id="0">0</button>
+                <button class="calc-button" id="decimal">.</button>
+                <button class="calc-button equals" id="equals">=</button>
+                <button class="calc-button operator" id="add">+</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
